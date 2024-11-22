@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Network Management</title>
+    <style>
+        .content {
+            max-width: 500px;
+            margin: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        button {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <form style="display:inline-block;" method="post" action="/?deauth={deauth}">
+                <button style="display:inline-block;" {disabled}>{deauth_button}</button>
+            </form>
+            <form style="display:inline-block; padding-left:8px;" method="post" action="/?hotspot={hotspot}">
+                <button style="display:inline-block;" {disabled}>{hotspot_button}</button>
+            </form>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>SSID</th>
+                <th>MAC/BSSID</th>
+                <th>Channel</th>
+                <th>Found</th>
+            </tr>
+            <!-- Network rows will be dynamically generated here -->
+        </table>
+    </div>
+</body>
+</html>
